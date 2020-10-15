@@ -14,7 +14,7 @@
 .location,
 h1,
 .visit p {
-  height: 16vh;
+  height: 25vh;
 }
  
 #logo {
@@ -27,7 +27,7 @@ h1,
 
 main h1 {
   animation-delay: 150ms;
-  font-size: clamp(4rem, 8vw, 8.4rem);
+  font-size: clamp(3.5rem, 8vw, 8.4rem);
 }
 
 .visit p {
