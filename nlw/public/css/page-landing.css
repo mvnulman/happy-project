@@ -8,7 +8,7 @@
 
 #container {
   margin: auto;
-  width: min(90%, 112rem);
+  width: 90%;
 }
 
 .location,
@@ -18,7 +18,7 @@ h1,
 }
  
 .visit a {
-  width: 8rem;
+  width:  5rem;
   height: 5rem;
   background: #ffd666;
   border: none;
@@ -34,25 +34,22 @@ h1,
     background: #96feff;
 }
 
-/* desktop version */
-@media(min-width:760px) {
-  header {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-  }
-
-  .location, h1, .visit p {
-    height: initial;
-    text-align: initial;
-  }
-
-  .location {
-    text-align: right;
-  }
-
-  main h1 {
-    font-size: 8vw;
-  }
+#logo {
+  animation-delay: 50ms;
 }
 
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  animation-delay: 150ms;
+}
+
+.visit p {
+  animation-delay: 200ms;
+}
+
+.visit a {
+  animation-delay: 250ms;
+}
