@@ -3,7 +3,7 @@
   text-align: center;
   min-height: 100vh;
   display: flex;
-  
+  align-items: center;
 }
 
 #container {
@@ -14,28 +14,11 @@
 .location,
 h1,
 .visit p {
-  height: 25vh;
-}
- 
-#logo {
-  animation-delay: 50ms;
-}
-
-.location {
-  animation-delay: 100ms;
-}
-
-main h1 {
-  animation-delay: 150ms;
-  font-size: clamp(3.5rem, 8vw, 8.4rem);
-}
-
-.visit p {
-  animation-delay: 200ms;
+  height: 16vh;
 }
  
 .visit a {
-  width:  5rem;
+  width: 8rem;
   height: 5rem;
   background: #ffd666;
   border: none;
@@ -45,21 +28,20 @@ main h1 {
   justify-content: center;
   margin: auto;
   transition: background 200ms;
-  animation-delay: 250ms;
 }
 
 .visit a:hover {
     background: #96feff;
 }
 
-/* Desktop version */
-@media (min-width: 760px) {
+/* desktop version */
+@media(min-width:760px) {
   header {
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: space-between;
   }
-  
+
   .location, h1, .visit p {
     height: initial;
     text-align: initial;
@@ -70,10 +52,7 @@ main h1 {
   }
 
   main h1 {
-    font-weight: bold;
-    width: min(300px, 80%);
-
+    font-size: 8vw;
   }
 }
-
 
