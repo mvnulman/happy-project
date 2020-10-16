@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,12 +10,13 @@ body {
 }
 
 :root {
-  font-size: 62.5%px;
+  font-size: 62.5%;
 }
 
 body,
 input,
 button,
 textarea {
-  font: 400 1.3rem/1 "Nunito", sans-serif;
+  font: 400 1.8rem/1 "Nunito", sans-serif;
 }
+
