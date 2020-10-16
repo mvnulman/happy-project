@@ -18,7 +18,7 @@ h1,
 }
  
 .visit a {
-  width: 8rem;
+  width: 5rem;
   height: 5rem;
   background: #ffd666;
   border: none;
@@ -52,7 +52,9 @@ h1,
   }
 
   main h1 {
-    font-size: 8vw;
+    font-size: clamp(4rem, 8vw, 8.4rem);
+    font-weight: bold;
+    width: min(300px, 80%);
   }
 }
 
