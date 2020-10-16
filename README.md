@@ -55,4 +55,4 @@ This project is under the MIT license. See the archive [LICENSE](LICENSE.md) for
 
 ---
 
-<p align="center">Developed with 💜 by Marcos Vinicius Nulman</p>
+<p align="center">Developed by Marcos Vinicius Nulman</p>
