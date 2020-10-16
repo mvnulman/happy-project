@@ -21,9 +21,9 @@
   <img alt="Happy" src=".github/happy.png" width="100%">
 </p>
 
-## 🚀 Tecnology
+## 🚀 Tecnologies
 
-Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
+This project was developed using the following technologies:
 
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
