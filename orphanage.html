@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt_BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Orphanage | Happy</title>
+    <title> Children's Home | Happy</title>
 
     <link
       rel="stylesheet"
@@ -12,7 +12,6 @@
       crossorigin=""
     />
 
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script
       src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -35,7 +34,7 @@
       <aside class="animate-right sidebar">
 
         <img src="./public/images/map-marker.svg" alt="Happy">
- 
+
         <footer>
           <button onclick="history.back()">
             <img src="./public/images/arrow-back.svg" alt="Voltar">
@@ -46,31 +45,31 @@
 
       <main class="animate-appear with-sidebar">
         <div class="orphanage-details">
-          <img src="./public/images/home.jpg" alt="Lar das meninas" />
+          <img src="./public/images/home.jpg" alt="Children's Home" />
 
           <div class="images">
-            <button class="active" type="button">
-              <img src="./public/images/home.jpg" alt="Lar das meninas" />
+            <button onclick="selectImage(event)" class="active" type="button">
+              <img src="https://source.unsplash.com/random?id=1" alt="Children's Home" />
             </button>
 
-            <button type="button">
-              <img src="./public/images/home.jpg" alt="Lar das meninas" />
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=2" alt="Children's Home" />
             </button>
 
-            <button type="button">
-              <img src="./public/images/home.jpg" alt="Lar das meninas" />
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=3" alt="Children's Home" />
             </button>
 
-            <button type="button">
-              <img src="./public/images/home.jpg" alt="Lar das meninas" />
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=4" alt="Children's Home" />
             </button>
 
-            <button type="button">
-              <img src="./public/images/home.jpg" alt="Lar das meninas" />
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=5" alt="Children's Home" />
             </button>
 
-            <button type="button">
-              <img src="./public/images/home.jpg" alt="Lar das meninas" />
+            <button onclick="selectImage(event)" type="button">
+              <img src="https://source.unsplash.com/random?id=6" alt="Lar das meninas" />
             </button>
           </div>
 
@@ -78,63 +77,48 @@
             <h1>Children's Home</h1>
 
             <p>
-              It provides assistance to children aged 6 to 15 who are at risk
-              and socially vulnerable.
+              We provide assistance to children aged 6 to 15 who are in risk situation and or social vulnerability
             </p>
 
             <div class="map-container">
               <div id="mapid"></div>
               <footer>
-                <a href="">View directions on Google Maps</a>
+                <a href="">View directions on Google Maps
+                </a>
               </footer>
             </div>
 
             <hr />
-            
-            <h2>Visiting instructions</h2>
+
+            <h2>Instruções para visita</h2>
 
             <p>
-              Come visit us and bring with you a lot of love and patience to give
+              Visit us and bring with you a lot of love and affection to give!
             </p>
 
-
             <div class="open-details">
-              <div class="hour"></div>
-              <img src="./public/images/clock.svg" alt="Hours" />
-              Visiting hours: 8 AM to 6 PM
-              <div class="open-on-weekends"></div>
-              <img src="./public/images/info.svg" alt="Informations" />
-              We work on weekends
+              <div class="hour">
+                <img src="./public/images/clock.svg" alt="Horários" />
+                Horário de visitas Das 18h até 8h
+              </div>
+              <div class="open-on-weekends">
+                <img src="./public/images/info.svg" alt="Informações" />
+                Atendemos fim de semana
+              </div>
             </div>
+
+            <button class="primary-button" type="button">
+              <img
+                src="./public/images/whatsapp.svg"
+                alt="Chamar no whatsapp"
+              />
+              Whatsapp chat
+            </button>
           </div>
-
-
-          <button class="primary-button" type="button">
-            <img 
-            src="./public/images/whatsapp.svg" 
-            alt="whatsapp" 
-            />
-            Get in touch
-          </button>
         </div>
       </main>
     </div>
+
     <script src="./public/scripts/page-orphanage.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
