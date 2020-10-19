@@ -60,8 +60,17 @@ fieldset legend {
     border-radius: 2rem;
 
     color: #5c8599;
-    
-
 }
 
+.input-block input {
+    height: 6.4rem;
+    padding: 0 1.6rem;
+}
+
+.input-block textarea {
+    height: clamp(12rem, 16rem, 24rem);
+    resize: vertical;
+    padding: 1.6rem;
+    line-height: 2.8rem;
+}
 
