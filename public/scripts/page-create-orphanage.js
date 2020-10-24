@@ -41,10 +41,31 @@ function addPhotoField () {
     // do the clone of the last image added 
     const newfieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
 
+    // verify if the field it's empty, if yes, do not add to the image container
+    const input = newfieldContainer.children[0]
+
+    if(input.value == "") {
+      return
+    }
+
     // clear the field before add to images container
-    newfieldContainer.children[0] .value = ""
+    input.value = ""
 
     // add the clone to container #images
-    container.appendChild(newfieldContainer)
+    container.appendChild(newfieldContainer)  
+}
 
+function deleteField(event) {
+    const span = event.currentTarget
+
+    const fieldsContainer = document.querySelectorAll('.new-upload')
+
+    if(fieldsContainer.length < 2) {
+      // clear the infos field
+      span.parentNode.children[0].value = ""
+      return
+    }
+
+    // delete the field
+    span.parentNode.remove();
 }
