@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Register one orphanage | Happy</title>
+    <title>Register one orphanage | Happy</title>
 
     <link
       rel="stylesheet"
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./public/css/sidebar.css" />
     <link rel="stylesheet" href="./public/css/map.css" />
     <link rel="stylesheet" href="./public/css/form.css" />
+    <link rel="stylesheet" href="./public/css/buttons.css" />
     <link rel="stylesheet" href="./public/css/page-create-orphanage.css" />
 
     <link
@@ -35,25 +36,24 @@
   <body>
     <div id="page-create-orphanage">
       <aside class="animate-right sidebar">
-
-        <img src="./public/images/map-marker.svg" alt="Happy">
+        <img src="./public/images/map-marker.svg" alt="Happy" />
 
         <footer>
           <button onclick="history.back()">
-            <img src="./public/images/arrow-back.svg" alt="Voltar">
+            <img src="./public/images/arrow-back.svg" alt="Voltar" />
           </button>
         </footer>
-
       </aside>
 
       <main class="animate-appear with-sidebar">
-
         <form action="">
           <fieldset>
             <legend>Information</legend>
 
             <div class="map-container">
               <div id="mapid"></div>
+              <input type="hidden" name="lat">
+              <input type="hidden" name="lng">
 
               <footer>
                 <a href="#" id="select-point">
@@ -62,31 +62,74 @@
               </footer>
             </div>
 
-
             <div class="input-block">
               <label for="name">Name</label>
-              <input id="name" name="name">
+              <input id="name" name="name" required/>
             </div>
 
             <div class="input-block">
-              <label for="about">About <span>Maximum of 300 characters
-              </span></label>
-              <textarea id="about" name="about"></textarea>
+              <label for="about"
+                >About <span>Maximum of 300 characters </span></label
+              >
+              <textarea id="about" name="about" required></textarea>
             </div>
 
             <div class="input-block">
               <label for="whatsapp">Whatsapp Number</label>
-              <input id="whatsapp" name="whatsapp">
+              <input id="whatsapp" name="whatsapp" required />
             </div>
 
+            <div class="input-block images">
+              <label for="images">Photo</label>
+
+              <div class="images-upload" id="images">
+                <div class="new-upload">
+                  <input name="images" placeholder="Paste the photo link here" required />
+                  <span>
+                    <img src="./public/images/remove-file.svg" alt="Remove photo">
+                  </span>
+                </div>
+              </div>
+              <button onclick="addPhotoField()" type="button">
+                <img src="./public/images/add-file.svg" alt="New image button" />
+              </button>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>Visitation</legend>
+
+            <div class="input-block">
+              <label for="instructions">Instructions</label>
+              <textarea id="instructions" name="instructions" required></textarea>
+            </div>
+
+            <div class="input-block">
+              <label for="opening_hours">Visit Hours</label>
+              <input id="opening_hours" name="opening_hours" required/>
+            </div>
+
+            <div class="input-block">
+              <label for="open_on_weekends">Open on weekends?</label>
+              <input
+                type="hidden"
+                id="open_on_weekends"
+                name="open_on_weekends"
+                value="1"
+                required
+              />
+
+              <div class="button-select">
+                <button type="button" class="active">Yes</button>
+                <button type="button" >No</button>
+              </div>
+
+              <button type="submit" class="primary-button">
+                Confirm
+              </button>
+            </div>
           </fieldset>
         </form>
-
-
       </main>
     </div>
     <script src="./public/scripts/page-create-orphanage.js"></script>
