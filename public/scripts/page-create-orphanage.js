@@ -69,3 +69,26 @@ function deleteField(event) {
     // delete the field
     span.parentNode.remove();
 }
+
+    // select yes or no
+    function toggleSelect(event) {
+
+        // remove the class .active (fron the buttons)
+        document.querySelectorAll('.button-select button')
+        .forEach (function(button) {
+            button.classList.remove('active')
+        })
+
+        // insert the class .active in this clicked button
+        const button = event.currentTarget
+        button.classList.add('active')
+
+        // update my hidden input with the select value
+        const input = document.querySelector('[name="open_on_weekends"]')
+
+        input.value = button.dataset.value
+
+    }
+
+    
+
