@@ -1,0 +1,23 @@
+{
+  "name": "happy-project",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r     <img alt=\"Happy\" title=\"Happy\" src=\".github/logo.svg\" />\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvnulman/happy-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvnulman/happy-project/issues"
+  },
+  "homepage": "https://github.com/mvnulman/happy-project#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
