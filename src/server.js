@@ -1,4 +1,4 @@
-//import package
+// import package
 const express = require('express')
 const path = require('path');
 
@@ -7,10 +7,15 @@ const server = express()
 server
     //using the static files
     .use(express.static('public'))
-    //rote create
+    
+    // template engine configuration
+    .set('views', path.join(__dirname, "views"))
+    .set('view engine', 'hbs')
+
+    // rote create
     .get('/', (request, response) => {
-        return response.sendFile(path.join(__dirname, 'views', 'index.html'))
+        return response.render('index')
     })
 
-//turn on server
+// turn on server
 server.listen(5500)
