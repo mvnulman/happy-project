@@ -15,19 +15,34 @@ const icon = L.icon({
   popupAnchor: [170, 2]
 })
 
-// create popup overlay
-const popup = L.popup({
-  closeButton: false,
-  className: 'map-popup',
-  minwidth: 240,
-  minheight: 240
-}).setContent(' Location <a href="orphanage?id=1" class="choose-orphanage"> <img src="/images/arrow-white.svg" > </a>')
+function addMarker ({id, name, lat, lng}) {
+
+  // create popup overlay
+  const popup = L.popup({
+    closeButton: false,
+    className: 'map-popup',
+    minwidth: 240,
+    minheight: 240
+  }).setContent(`${name} <a href="orphanage?id=${id}"><img src="/images/arrow-white.svg" > </a>`)
 
 
+  //create and add marker
+  L
+  .marker([lat, lng], { icon })
+  .addTo(map) 
+  .bindPopup(popup)
+}
 
-//create and add marker
+const orphanagesSpan = document.querySelectorAll('.orphanages span')
+orphanagesSpan.forEach( span => {
+  const orphanage = {
+      id: span.dataset.id,
+      name: span.dataset.name,
+      lat: span.dataset.lat,
+      lng: span.dataset.lng
+  }
 
-L
-.marker([-27.2161717,-49.6448021], { icon })
-.addTo(map)
-.bindPopup(popup)
+  addMarker(orphanage)
+})
+
+ 
