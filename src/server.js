@@ -1,25 +1,22 @@
-// import package
-const express = require('express')
-const path = require('path');
-const pages =require('./pages.js')
+const express = require("express");
+const path = require("path");
 
-console.log(pages)
+const pages = require("./pages.js");
 
-//express initialization
-const server = express()
+const server = express();
+
 server
-    //using the static files
-    .use(express.static('public'))
-    
-    // template engine configuration
-    .set('views', path.join(__dirname, "views"))
-    .set('view engine', 'hbs')
+  .use(express.urlencoded({ extended: true }))
 
-    // application rotes
-    .get('/', pages.index)
-    .get('/orphanage', pages.orphanage)
-    .get('/orphanages', pages.orphanages)
-    .get('/create-orphanage', pages.createOrphanage)
-    
-// turn on server
-    server.listen(5500)
+  .use(express.static("public"))
+  .set("views", path.join(__dirname, "views"))
+  .set("view engine", "hbs")
+
+  .get("/", pages.index)
+  .get("/orphanage", pages.orphanage)
+  .get("/orphanages", pages.orphanages)
+  .get("/create-orphanage", pages.createOrphanage)
+  .post("/save-orphanage", pages.saveOrphanage);
+
+server.listen(5500)
+ 

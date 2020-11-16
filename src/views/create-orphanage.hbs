@@ -46,7 +46,7 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action="">
+        <form action="save-orphanage" method="post">
           <fieldset>
             <legend>Information</legend>
 
@@ -84,7 +84,7 @@
 
               <div class="images-upload" id="images">
                 <div class="new-upload">
-                  <input name="images" placeholder="Paste the photo link here" required />
+                  <input name="images" placeholder="Paste the photo link here" required type="url" />
                   <span onclick="deleteField(event)">
                     <img src="/images/remove-file.svg" alt="Remove photo">
                   </span>
