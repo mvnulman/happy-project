@@ -16,6 +16,7 @@ Database.then(async db => {
         instructions: "Come visit us and bring with you a lot of love and affection to give!",
         opening_hours: "08:00AM - 08:00PM",
         open_on_weekends: "1"
+
     });
 
     // data consult on the tables
@@ -25,4 +26,7 @@ Database.then(async db => {
     // consult only 1 orphanage, by id
     const orphanage = await db.all('SELECT * FROM orphanages WHERE id = "3"')
     console.log(orphanage)
+
+    // delete data from tables
+    console.log(await db.run("DELETE FROM orphanages WHERE id = '3'"))
 })    
