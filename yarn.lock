@@ -500,12 +500,12 @@ graceful-fs@^4.2.6:
   version "4.2.10"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
 
-handlebars@4.7.7:
-  version "4.7.7"
-  resolved "https://registry.npmjs.org/handlebars/-/handlebars-4.7.7.tgz"
+handlebars@4.7.9:
+  version "4.7.9"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.9.tgz#6f139082ab58dc4e5a0e51efe7db5ae890d56a0f"
   dependencies:
     minimist "^1.2.5"
-    neo-async "^2.6.0"
+    neo-async "^2.6.2"
     source-map "^0.6.1"
     wordwrap "^1.0.0"
   optionalDependencies:
@@ -529,11 +529,11 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hbs@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/hbs/-/hbs-4.2.0.tgz"
+hbs@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/hbs/-/hbs-4.2.1.tgz#cf7ad4146d36c874cc69c41bf7d75977734e7e57"
   dependencies:
-    handlebars "4.7.7"
+    handlebars "4.7.9"
     walk "2.3.15"
 
 http-cache-semantics@^4.1.0:
@@ -814,9 +814,9 @@ negotiator@0.6.3, negotiator@^0.6.2:
   version "0.6.3"
   resolved "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz"
 
-neo-async@^2.6.0:
+neo-async@^2.6.2:
   version "2.6.2"
-  resolved "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
 
 node-addon-api@^4.2.0:
   version "4.3.0"
